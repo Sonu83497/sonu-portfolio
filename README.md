@@ -1,5 +1,7 @@
 # Sonu Prajapati — AI & ML Portfolio
 
+**Live Portfolio:** https://sonuprajapati-ai.vercel.app/
+
 A production-ready, dashboard-style personal portfolio for **Sonu Prajapati**, an aspiring AI & Machine
 Learning Engineer. Built with Next.js 16 (App Router), TypeScript, Tailwind CSS v4, and Framer Motion,
 in a premium dark-navy "signal blue" theme inspired by Apple, Vercel, and Linear.
