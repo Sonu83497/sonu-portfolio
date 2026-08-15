@@ -243,6 +243,38 @@ export const PROJECTS: Project[] = [
     "https://sonu83497.github.io/Library-Management-System-With-AI-Chatbot/",
   accent: "violet",
 },
+{
+  slug: "mental-health-signal",
+  title: "Mental Health Signal",
+  category: "Machine Learning",
+  description:
+    "An AI-powered mental health prediction web application that analyzes user inputs using a trained Machine Learning model and delivers real-time mental health risk assessment through a FastAPI backend and responsive frontend.",
+  features: [
+    "AI-powered mental health risk prediction",
+    "FastAPI REST API integration",
+    "Machine Learning model deployment",
+    "Real-time prediction results",
+    "Responsive HTML, CSS & JavaScript interface",
+    "Scikit-Learn model with Joblib serialization",
+    "User-friendly and lightweight design",
+  ],
+  stack: [
+    "Python",
+    "FastAPI",
+    "Scikit-Learn",
+    "Pandas",
+    "NumPy",
+    "Joblib",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+  ],
+  githubUrl:
+    "https://github.com/Sonu83497/Mental-Health-Signal",
+  liveUrl:
+    "https://mental-health-signal-2-0p0s.onrender.com/",
+  accent: "emerald",
+},
 ];
 
 export const PROJECT_FILTERS = [
