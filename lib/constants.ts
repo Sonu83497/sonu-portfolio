@@ -192,20 +192,44 @@ export const PROJECTS: Project[] = [
     accent: "violet",
   },
   {
-    slug: "house-price-prediction",
-    title: "House Price Prediction",
+    slug: "vision-ml",
+    title: "VisionML - AI House Price Predictor",
     category: "Machine Learning",
     description:
-      "A regression-based machine learning project that predicts house prices from structural and location features, with a full feature-engineering and model-evaluation workflow.",
+      "An AI-powered house price prediction platform that uses a trained XGBoost Regression model to estimate property prices instantly. VisionML combines Machine Learning, FastAPI, and Next.js to provide accurate real-time predictions through a modern and responsive web interface.",
+
     features: [
-      "Feature engineering & outlier handling",
-      "Model comparison across regression algorithms",
-      "Hyperparameter tuning for best-fit accuracy",
+      "AI-powered house price prediction",
+      "XGBoost Regression model integration",
+      "89.97% model accuracy",
+      "FastAPI REST API backend",
+      "Real-time property price estimation",
+      "10+ property feature analysis",
+      "Interactive Next.js user interface",
+      "Machine Learning model deployment",
+      "Responsive and modern design",
     ],
-    stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
-    githubUrl: "https://github.com/sonuprajapati/house-price-prediction",
-    liveUrl: "https://github.com/sonuprajapati/house-price-prediction",
-    accent: "emerald",
+
+    stack: [
+      "Python",
+      "FastAPI",
+      "XGBoost",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "Joblib",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+
+    githubUrl:
+      "https://github.com/Sonu83497/VisionML",
+
+    liveUrl:
+      "https://vision-ml-ochre.vercel.app/",
+
+    accent: "blue",
   },
   {
     slug: "ai-chatbot",
@@ -224,57 +248,57 @@ export const PROJECTS: Project[] = [
     accent: "amber",
   },
   {
-  slug: "library-management-system-with-ai-chatbot",
-  title: "Library Management System with AI Chatbot",
-  category: "Web Development",
-  description:
-    "A full-stack library management system with an integrated AI chatbot, designed to streamline book management, member management, issue and return operations, search, and user assistance.",
-  features: [
-    "Complete library management workflow",
-    "Book and member management",
-    "Issue and return book management",
-    "Search and data management",
-    "AI chatbot for user assistance",
-  ],
-  stack: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Python"],
-  githubUrl:
-    "https://github.com/Sonu83497/Library-Management-System-With-AI-Chatbot",
-  liveUrl:
-    "https://sonu83497.github.io/Library-Management-System-With-AI-Chatbot/",
-  accent: "violet",
-},
-{
-  slug: "mental-health-signal",
-  title: "Mental Health Signal",
-  category: "Machine Learning",
-  description:
-    "An AI-powered mental health prediction web application that analyzes user inputs using a trained Machine Learning model and delivers real-time mental health risk assessment through a FastAPI backend and responsive frontend.",
-  features: [
-    "AI-powered mental health risk prediction",
-    "FastAPI REST API integration",
-    "Machine Learning model deployment",
-    "Real-time prediction results",
-    "Responsive HTML, CSS & JavaScript interface",
-    "Scikit-Learn model with Joblib serialization",
-    "User-friendly and lightweight design",
-  ],
-  stack: [
-    "Python",
-    "FastAPI",
-    "Scikit-Learn",
-    "Pandas",
-    "NumPy",
-    "Joblib",
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-  ],
-  githubUrl:
-    "https://github.com/Sonu83497/Mental-Health-Signal",
-  liveUrl:
-    "https://mental-health-signal-2-0p0s.onrender.com/",
-  accent: "emerald",
-},
+    slug: "library-management-system-with-ai-chatbot",
+    title: "Library Management System with AI Chatbot",
+    category: "Web Development",
+    description:
+      "A full-stack library management system with an integrated AI chatbot, designed to streamline book management, member management, issue and return operations, search, and user assistance.",
+    features: [
+      "Complete library management workflow",
+      "Book and member management",
+      "Issue and return book management",
+      "Search and data management",
+      "AI chatbot for user assistance",
+    ],
+    stack: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Python"],
+    githubUrl:
+      "https://github.com/Sonu83497/Library-Management-System-With-AI-Chatbot",
+    liveUrl:
+      "https://sonu83497.github.io/Library-Management-System-With-AI-Chatbot/",
+    accent: "violet",
+  },
+  {
+    slug: "mental-health-signal",
+    title: "Mental Health Signal",
+    category: "Machine Learning",
+    description:
+      "An AI-powered mental health prediction web application that analyzes user inputs using a trained Machine Learning model and delivers real-time mental health risk assessment through a FastAPI backend and responsive frontend.",
+    features: [
+      "AI-powered mental health risk prediction",
+      "FastAPI REST API integration",
+      "Machine Learning model deployment",
+      "Real-time prediction results",
+      "Responsive HTML, CSS & JavaScript interface",
+      "Scikit-Learn model with Joblib serialization",
+      "User-friendly and lightweight design",
+    ],
+    stack: [
+      "Python",
+      "FastAPI",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "Joblib",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+    ],
+    githubUrl:
+      "https://github.com/Sonu83497/Mental-Health-Signal",
+    liveUrl:
+      "https://mental-health-signal-2-0p0s.onrender.com/",
+    accent: "emerald",
+  },
 ];
 
 export const PROJECT_FILTERS = [
@@ -301,10 +325,10 @@ export type TimelineStage = {
 
 export const LEARNING_JOURNEY: TimelineStage[] = [
   {
-  title: "Frontend Development",
-  status: "completed",
-  description:
-    "Responsive and modern web interfaces using HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS, with a focus on clean UI, usability, and mobile responsiveness.",
+    title: "Frontend Development",
+    status: "completed",
+    description:
+      "Responsive and modern web interfaces using HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS, with a focus on clean UI, usability, and mobile responsiveness.",
   },
   {
     title: "Python Programming",
@@ -347,28 +371,34 @@ export type Certificate = {
 
 export const CERTIFICATES: Certificate[] = [
   {
-  title: "MERN Stack Developer Intern",
-  provider: "Codec Technologies Pvt. Ltd.",
-  date: "2025",
-  url: "/certificates/MERN_Stack.png",
+    title: "Foundations of Artificial Intelligence",
+    provider: "IBM SkillsBuild",
+    date: "2026",
+    url: "/certificates/IBM_Foundations_of_Artificial_Intelligence.png",
   },
   {
-  title: "INSPIRE Award – District Level Science Exhibition",
-  provider: "Department of Science & Technology, Government of India",
-  date: "2018–19",
-  url: "/certificates/INSPIRE_Award.png",
+    title: "MERN Stack Developer Intern",
+    provider: "Codec Technologies Pvt. Ltd.",
+    date: "2025",
+    url: "/certificates/MERN_Stack.png",
   },
   {
-  title: "Certificate of Completion – Swachh Bharat Mission",
-  provider: "Tulip Infratech / Gwalior Municipal Corporation",
-  date: "06/09/2023",
-  url: "/certificates/TULIP_Certificate.png",
+    title: "INSPIRE Award – District Level Science Exhibition",
+    provider: "Department of Science & Technology, Government of India",
+    date: "2018–19",
+    url: "/certificates/INSPIRE_Award.png",
   },
   {
-  title: "MP Tourism Quiz – 2019",
-  provider: "Madhya Pradesh Tourism Department",
-  date: "2019",
-  url: "/certificates/MP_TOURISM_QUIZ_2019.png",
+    title: "Certificate of Completion – Swachh Bharat Mission",
+    provider: "Tulip Infratech / Gwalior Municipal Corporation",
+    date: "06/09/2023",
+    url: "/certificates/TULIP_Certificate.png",
+  },
+  {
+    title: "MP Tourism Quiz – 2019",
+    provider: "Madhya Pradesh Tourism Department",
+    date: "2019",
+    url: "/certificates/MP_TOURISM_QUIZ_2019.png",
   },
 ];
 
