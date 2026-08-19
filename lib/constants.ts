@@ -253,7 +253,7 @@ export const PROJECTS: Project[] = [
     category: "Web Development",
     description:
       "A production-ready full-stack library management platform with role-based authentication, persistent cloud MySQL storage, book and member management, issue and return workflows, fines, notifications, audit logging, and an AI-powered library assistant.",
-    features: [
+      features: [
       "Role-based authentication for Admin, Librarian, and Member",
       "Complete library management workflow",
       "Book, author, category, and copy management",
