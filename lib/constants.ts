@@ -184,7 +184,7 @@ export const PROJECTS: Project[] = [
     category: "Web Development",
     description:
       "A full-stack Library Management System with role-based authentication, cloud MySQL, book lending, fines, notifications, audit logs, and an AI-powered library assistant.",
-      features: [
+    features: [
       "Role-based authentication for Admin, Librarian, and Member",
       "Complete library management workflow",
       "Book, author, category, and copy management",
@@ -209,7 +209,7 @@ export const PROJECTS: Project[] = [
       "https://athenaeum-library-system-woad.vercel.app/login",
     accent: "violet",
   },
-   {
+  {
     slug: "vision-ml",
     title: "VisionML - AI House Price Predictor",
     thumbnail: "/projects/vision-ml.png",
@@ -311,7 +311,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://github.com/sonuprajapati/ai-chatbot",
     accent: "amber",
   },
-  
+
 ];
 
 export const PROJECT_FILTERS = [
@@ -324,7 +324,7 @@ export const PROJECT_FILTERS = [
 
 export const GITHUB_STATS = {
   username: "sonuprajapati",
-  totalRepos: "20+",
+  totalRepos: "15+",
   contributions: "10+",
   streak: "20 Days",
   topLanguage: "Python",
@@ -347,6 +347,19 @@ export const LEARNING_JOURNEY: TimelineStage[] = [
     title: "Python Programming",
     status: "completed",
     description: "Core syntax, data structures, OOP, and scripting fundamentals.",
+  },
+  {
+    title: "Git",
+    status: "completed",
+    description:
+      "Version control with Git, including repositories, branching, commits, merging, conflict resolution, and maintaining clean project history.",
+  },
+
+  {
+    title: "GitHub",
+    status: "completed",
+    description:
+      "Collaborative software development using GitHub for repository management, pull requests, issues, project collaboration, and deployment workflows.",
   },
   {
     title: "Data Analysis with Pandas",
