@@ -144,6 +144,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export type Project = {
   slug: string;
   title: string;
+  thumbnail: string;
   category: "Data Analysis" | "Web Development" | "AI / Deep Learning" | "Machine Learning";
   description: string;
   features: string[];
@@ -157,9 +158,10 @@ export type Project = {
 export const FEATURED_PROJECT: Project = {
   slug: "ipl-2022-data-analysis",
   title: "IPL 2022 Data Analysis",
+  thumbnail: "/projects/ipl-2022-data-analysis.png",
   category: "Data Analysis",
   description:
-    "An end-to-end exploratory data analysis on the IPL 2022 dataset, uncovering insights on team performance, player form, match trends, and toss-decision impact through clean, reproducible Python notebooks.",
+    "An end-to-end exploratory analysis of the IPL 2022 dataset, uncovering insights into team performance, player form, match trends, and toss decisions using clean, reproducible Python workflows.",
   features: [
     "Data cleaning & preprocessing pipeline",
     "Exploratory data analysis across 70+ matches",
@@ -176,40 +178,51 @@ export const FEATURED_PROJECT: Project = {
 export const PROJECTS: Project[] = [
   FEATURED_PROJECT,
   {
-    slug: "sales-dashboard",
-    title: "Sales Dashboard",
-    category: "Data Analysis",
+    slug: "athenaeum-library-management-system",
+    title: "Athenaeum — AI-Powered Library Management System",
+    thumbnail: "/projects/library-management.png",
+    category: "Web Development",
     description:
-      "An interactive dashboard for visualizing sales performance across regions, products, and time periods, built to help stakeholders spot trends at a glance.",
-    features: [
-      "Dynamic filtering by region and product line",
-      "Revenue & growth trend visualizations",
-      "Exportable summary reports",
+      "A full-stack Library Management System with role-based authentication, cloud MySQL, book lending, fines, notifications, audit logs, and an AI-powered library assistant.",
+      features: [
+      "Role-based authentication for Admin, Librarian, and Member",
+      "Complete library management workflow",
+      "Book, author, category, and copy management",
+      "Member registration and account management",
+      "Issue and return book management",
+      "Due-date, overdue, and fine management",
+      "Notifications and audit logging",
+      "AI-powered library assistant",
     ],
-    stack: ["Python", "Pandas", "Plotly", "Dash"],
-    githubUrl: "https://github.com/Sonu83497/Superstore-Data-Analytics-Business-Insights.git",
-    liveUrl: "https://github.com/Sonu83497/Superstore-Data-Analytics-Business-Insights.git",
+    stack: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "CSS3",
+      "Python",
+      "FastAPI",
+      "MySQL",
+    ],
+    githubUrl:
+      "https://github.com/Sonu83497/Athenaeum-Library-System",
+    liveUrl:
+      "https://athenaeum-library-system-woad.vercel.app/login",
     accent: "violet",
   },
-  {
+   {
     slug: "vision-ml",
     title: "VisionML - AI House Price Predictor",
+    thumbnail: "/projects/vision-ml.png",
     category: "Machine Learning",
     description:
-      "An AI-powered house price prediction platform that uses a trained XGBoost Regression model to estimate property prices instantly. VisionML combines Machine Learning, FastAPI, and Next.js to provide accurate real-time predictions through a modern and responsive web interface.",
+      "AI-powered house price prediction platform using XGBoost, FastAPI, and Next.js for accurate real-time property price estimation.",
 
     features: [
       "AI-powered house price prediction",
       "XGBoost Regression model integration",
       "89.97% model accuracy",
       "FastAPI REST API backend",
-      "Real-time property price estimation",
-      "10+ property feature analysis",
-      "Interactive Next.js user interface",
-      "Machine Learning model deployment",
-      "Responsive and modern design",
     ],
-
     stack: [
       "Python",
       "FastAPI",
@@ -232,68 +245,9 @@ export const PROJECTS: Project[] = [
     accent: "blue",
   },
   {
-    slug: "ai-chatbot",
-    title: "AI Chatbot",
-    category: "AI / Deep Learning",
-    description:
-      "An NLP-based conversational assistant that understands user intent and answers questions intelligently, built with a transformer-based language pipeline.",
-    features: [
-      "Intent recognition & entity extraction",
-      "Context-aware multi-turn conversation",
-      "Deployed with a lightweight chat interface",
-    ],
-    stack: ["Python", "NLTK", "Transformers", "Gradio"],
-    githubUrl: "https://github.com/sonuprajapati/ai-chatbot",
-    liveUrl: "https://github.com/sonuprajapati/ai-chatbot",
-    accent: "amber",
-  },
-  {
-    slug: "athenaeum-library-management-system",
-    title: "Athenaeum — AI-Powered Library Management System",
-    category: "Web Development",
-    description:
-      "A production-ready full-stack library management platform with role-based authentication, persistent cloud MySQL storage, book and member management, issue and return workflows, fines, notifications, audit logging, and an AI-powered library assistant.",
-      features: [
-      "Role-based authentication for Admin, Librarian, and Member",
-      "Complete library management workflow",
-      "Book, author, category, and copy management",
-      "Member registration and account management",
-      "Issue and return book management",
-      "Due-date, overdue, and fine management",
-      "Notifications and audit logging",
-      "AI-powered library assistant",
-      "Persistent cloud MySQL database",
-      "JWT authentication and secure password hashing",
-      "Alembic database migrations",
-      "Production deployment with Vercel and Render",
-    ],
-    stack: [
-      "React",
-      "Vite",
-      "JavaScript",
-      "CSS3",
-      "Python",
-      "FastAPI",
-      "SQLAlchemy",
-      "MySQL",
-      "Alembic",
-      "JWT",
-      "bcrypt",
-      "Groq",
-      "Gemini",
-      "Vercel",
-      "Render",
-      "Aiven",
-    ],
-    githubUrl:
-      "https://github.com/Sonu83497/Athenaeum-Library-System",
-    liveUrl:
-      "https://athenaeum-library-system-woad.vercel.app/login",
-    accent: "violet",
-  },
-  {
     slug: "mental-health-signal",
     title: "Mental Health Signal",
+    thumbnail: "/projects/mental-health-signal.png",
     category: "Machine Learning",
     description:
       "An AI-powered mental health prediction web application that analyzes user inputs using a trained Machine Learning model and delivers real-time mental health risk assessment through a FastAPI backend and responsive frontend.",
@@ -323,6 +277,41 @@ export const PROJECTS: Project[] = [
       "https://mental-health-signal-2-0p0s.onrender.com/",
     accent: "emerald",
   },
+  {
+    slug: "sales-dashboard",
+    title: "Sales Dashboard",
+    thumbnail: "/projects/sales-dashboard.png",
+    category: "Data Analysis",
+    description:
+      "An interactive dashboard for visualizing sales performance across regions, products, and time periods, built to help stakeholders spot trends at a glance.",
+    features: [
+      "Dynamic filtering by region and product line",
+      "Revenue & growth trend visualizations",
+      "Exportable summary reports",
+    ],
+    stack: ["Python", "Pandas", "Plotly", "Dash"],
+    githubUrl: "https://github.com/Sonu83497/Superstore-Data-Analytics-Business-Insights.git",
+    liveUrl: "https://github.com/Sonu83497/Superstore-Data-Analytics-Business-Insights.git",
+    accent: "violet",
+  },
+  {
+    slug: "ai-chatbot",
+    title: "AI Chatbot",
+    thumbnail: "/projects/ai-chatbot.png",
+    category: "AI / Deep Learning",
+    description:
+      "An NLP-based conversational assistant that understands user intent and answers questions intelligently, built with a transformer-based language pipeline.",
+    features: [
+      "Intent recognition & entity extraction",
+      "Context-aware multi-turn conversation",
+      "Deployed with a lightweight chat interface",
+    ],
+    stack: ["Python", "NLTK", "Transformers", "Gradio"],
+    githubUrl: "https://github.com/sonuprajapati/ai-chatbot",
+    liveUrl: "https://github.com/sonuprajapati/ai-chatbot",
+    accent: "amber",
+  },
+  
 ];
 
 export const PROJECT_FILTERS = [
