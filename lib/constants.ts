@@ -349,6 +349,16 @@ export const LEARNING_JOURNEY: TimelineStage[] = [
     description: "Core syntax, data structures, OOP, and scripting fundamentals.",
   },
   {
+    title: "Operating System",
+    status: "completed",
+    description: "Processes, Threads, Memory Management, Scheduling, Synchronization, and file system.",
+  },
+  {
+    title: "Database Management System { DBMS }",
+    status: "completed",
+    description: "Database design, SQL, Normalization, Transactions, indexing, and Query Optimization.",
+  },
+  {
     title: "Git",
     status: "completed",
     description:
@@ -372,9 +382,19 @@ export const LEARNING_JOURNEY: TimelineStage[] = [
     description: "Storytelling with Matplotlib, Seaborn, and Power BI dashboards.",
   },
   {
+    title: "SQL Language",
+    status: "completed",
+    description: "Structured Query Language is the standard programming language used to access, manage and manipulate data in relation database.",
+  },
+  {
     title: "Machine Learning",
     status: "in-progress",
     description: "Supervised & unsupervised learning with Scikit-learn.",
+  },
+  {
+    title: "Data Structures & Algorithms { DSA }",
+    status: "in-progress",
+    description: "Array, Linked-list, Tree, Graphs, Dynamic Programming and Problem Solving.",
   },
   {
     title: "Deep Learning",
@@ -385,6 +405,21 @@ export const LEARNING_JOURNEY: TimelineStage[] = [
     title: "Generative AI",
     status: "upcoming",
     description: "LLMs, prompt engineering, and applied generative systems.",
+  },
+  {
+    title: "Agentic AI",
+    status: "upcoming",
+    description: "Autonomous AI agent, tool calling, planning, memory, RAG and multi-agent system.",
+  },
+  {
+    title: "Computer Network",
+    status: "upcoming",
+    description: "OSI/TCP-IP models, Routing, Switching, HTTP, DNS, and Network Security.",
+  },
+  {
+    title: "System Design",
+    status: "upcoming",
+    description: "Scalable Architectures, Load balancing, Caching, Databases, Microservices and Distributed Systems.",
   },
 ];
 
